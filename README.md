@@ -3,7 +3,8 @@
 Website of the **Software Engineering for Automotive and Embedded Systems (SEAS)** group,
 Chalmers University of Technology & University of Gothenburg.
 Hosted on GitHub Pages at <https://seas-group.github.io> (repo `seas-group/seas-group.github.io`).
-Design: [Strongly Typed](https://html5up.net/strongly-typed) by HTML5 UP (CCA 3.0, see `TEMPLATE-LICENSE.txt`).
+Design: [Pulse](https://zumatools.com/website-templates/saas-landing/) by ZumaTools (MIT, see `LICENSE-template.txt`).
+Colors and fonts are CSS variables at the top of `assets/css/style.css`.
 
 ## Editing content
 
@@ -17,6 +18,7 @@ Edit them directly on GitHub (pencil icon) and the site updates within a minute.
 | Group members (bio, links)   | `content/members.js`      |
 | Recent publications, datasets| `content/publications.js` |
 | Top SE venues (JUFO / CORE)  | `content/venues.js`       |
+| Numbers in the stats bar     | `content/stats.js`        |
 
 Each file has instructions at the top. Typical edit = copy a `{ ... },` block, paste it at the
 top of the list, change the text. Keep the quotes and commas.

@@ -7,3 +7,5 @@ outputs/
 work/
 _source/
 .claude/
+preview-ledger/
+preview-pulse/
