@@ -14,6 +14,7 @@ var SEAS_VENUES_JOURNALS = [
   { name: "Empirical Software Engineering", short: "EMSE", jufo: "3", core: "A", url: "https://link.springer.com/journal/10664" },
   { name: "Information and Software Technology", short: "IST", jufo: "3", core: "A", url: "https://www.sciencedirect.com/journal/information-and-software-technology" },
   { name: "Journal of Systems and Software", short: "JSS", jufo: "3", core: "A", url: "https://www.sciencedirect.com/journal/journal-of-systems-and-software" },
+  { name: "Software and Systems Modeling", short: "SoSyM", jufo: "3", core: "", url: "https://link.springer.com/journal/10270" },
   { name: "Automated Software Engineering", short: "AUSE", jufo: "", core: "", url: "https://link.springer.com/journal/10515" },
   { name: "Software Quality Journal", short: "SQJ", jufo: "", core: "", url: "https://link.springer.com/journal/11219" },
   { name: "IEEE Software", short: "IEEE Software", jufo: "", core: "", url: "https://www.computer.org/csdl/magazine/so" },
