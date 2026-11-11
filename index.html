@@ -1,225 +1,210 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	SEAS group website
+	Based on "Strongly Typed" by HTML5 UP (html5up.net | @ajlkn), CCA 3.0 license.
+
+	Most content lives in the content/ folder (news, research, members,
+	publications, datasets, venues) - edit those files, not this one.
+-->
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SEAS researches how to engineer dependable software for embedded, automotive, and AI-enabled systems.">
-  <meta name="theme-color" content="#071b2b">
-  <meta property="og:title" content="SEAS — Software Engineering for Embedded & Automotive Systems">
-  <meta property="og:description" content="Researching dependable software for the systems that move through the real world.">
-  <meta property="og:type" content="website">
-  <title>SEAS — Software Engineering for Embedded & Automotive Systems</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+	<head>
+		<title>SEAS – Software Engineering for Automotive and Embedded Systems</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="SEAS research group at Chalmers University of Technology and the University of Gothenburg: software engineering for automotive and embedded systems, AI agents for software engineering, and software measurement." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/seas.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
 
-  <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="SEAS home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>SEAS</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#people">People</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
-      <span></span><span></span><span class="sr-only">Open menu</span>
-    </button>
-    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" data-mobile-menu>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#people">People</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<h1 id="logo"><a href="index.html">SEAS</a></h1>
+						<p>Software Engineering for Automotive and Embedded Systems<br />
+						Chalmers University of Technology &amp; University of Gothenburg</p>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span>Research group</span> Gothenburg, Sweden</p>
-        <h1>Software that has to work in the <em>real world.</em></h1>
-        <p class="hero-intro">We study how to design, measure, and evolve dependable software for embedded, automotive, and AI-enabled systems.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#research">Explore our research <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="#contact">Work with us <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
+						<nav id="nav">
+							<ul>
+								<li><a class="icon solid fa-flask" href="#research"><span>Research</span></a></li>
+								<li><a class="icon solid fa-users" href="#people"><span>People</span></a></li>
+								<li><a class="icon solid fa-bullhorn" href="#news"><span>News</span></a></li>
+								<li><a class="icon solid fa-book" href="#publications"><span>Publications</span></a></li>
+								<li><a class="icon solid fa-database" href="#datasets"><span>Datasets</span></a></li>
+								<li><a class="icon solid fa-trophy" href="#venues"><span>Top venues</span></a></li>
+								<li><a class="icon solid fa-envelope" href="#footer"><span>Contact</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</section>
 
-      <div class="system-map reveal" aria-label="Illustration connecting software, systems, data, and people">
-        <div class="map-orbit orbit-one"></div>
-        <div class="map-orbit orbit-two"></div>
-        <div class="map-node map-core"><span>SEAS</span><small>research</small></div>
-        <div class="map-node node-a"><span>01</span><small>Software</small></div>
-        <div class="map-node node-b"><span>02</span><small>Systems</small></div>
-        <div class="map-node node-c"><span>03</span><small>Data</small></div>
-        <div class="map-node node-d"><span>04</span><small>People</small></div>
-        <svg viewBox="0 0 600 600" aria-hidden="true">
-          <path d="M300 300 L130 160 M300 300 L470 135 M300 300 L490 430 M300 300 L120 450"/>
-        </svg>
-      </div>
+			<!-- Research focus -->
+				<section id="features">
+					<div class="container" id="research">
+						<header>
+							<h2>Our <strong>research focus</strong></h2>
+						</header>
+						<p class="seas-focus" id="seas-focus"></p>
+						<div class="row aln-center" id="seas-research"></div>
+					</div>
+				</section>
 
-      <div class="hero-foot reveal">
-        <p>Chalmers University of Technology<br>&amp; University of Gothenburg</p>
-        <p class="mono">Academia × industry<br>Evidence × engineering</p>
-        <a href="#research" class="scroll-cue" aria-label="Scroll to research"><span></span>Scroll</a>
-      </div>
-    </section>
+			<!-- Group photo -->
+				<section id="banner">
+					<div class="container">
+						<p>We work <strong>with industry, in industry</strong> &mdash; automotive, telecom and embedded systems.</p>
+					</div>
+				</section>
 
-    <section class="statement section-pad">
-      <p class="section-index">01 / Mission</p>
-      <div class="statement-copy reveal">
-        <p>Modern vehicles and embedded products are no longer defined by hardware alone.</p>
-        <h2>They are complex, evolving <span>software systems.</span></h2>
-        <p class="statement-note">SEAS brings rigorous research into close contact with industrial reality—turning data, methods, and engineering experience into systems we can understand and trust.</p>
-      </div>
-    </section>
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
 
-    <section class="research section-pad" id="research">
-      <div class="section-heading reveal">
-        <div>
-          <p class="section-index">02 / Research</p>
-          <h2>Where we focus</h2>
-        </div>
-        <p>Our work connects software engineering foundations with the constraints of physical, safety-critical, and data-intensive systems.</p>
-      </div>
+							<!-- Content -->
+								<div id="content" class="col-8 col-12-medium">
 
-      <div class="research-grid">
-        <article class="research-card reveal">
-          <p class="card-number">R / 01</p>
-          <div class="card-symbol" aria-hidden="true"><span>AI</span></div>
-          <h3>AI Engineering</h3>
-          <p>Engineering dependable AI-enabled products—from data and infrastructure to reasoning systems and agents.</p>
-          <ul><li>Generative AI</li><li>MLOps</li><li>AI quality</li></ul>
-        </article>
-        <article class="research-card reveal">
-          <p class="card-number">R / 02</p>
-          <div class="card-symbol symbol-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          <h3>Software Analytics</h3>
-          <p>Making software quality measurable and actionable through evidence, metrics, and industrial data.</p>
-          <ul><li>KPIs</li><li>Code quality</li><li>Decision support</li></ul>
-        </article>
-        <article class="research-card reveal">
-          <p class="card-number">R / 03</p>
-          <div class="card-symbol symbol-cube" aria-hidden="true"><i></i></div>
-          <h3>Architecture &amp; Digital Twins</h3>
-          <p>Models and architectures that help engineers reason about complex systems across their lifecycle.</p>
-          <ul><li>Modelling</li><li>UML / SysML</li><li>Self-adaptation</li></ul>
-        </article>
-        <article class="research-card reveal">
-          <p class="card-number">R / 04</p>
-          <div class="card-symbol symbol-shield" aria-hidden="true"><i></i></div>
-          <h3>Safety &amp; Security</h3>
-          <p>Methods for building confidence in connected, embedded, and safety-critical software.</p>
-          <ul><li>ISO 26262</li><li>Verification</li><li>Cybersecurity</li></ul>
-        </article>
-      </div>
-    </section>
+									<article class="box post" id="publications">
+										<header>
+											<h2>Recent <strong>publications</strong></h2>
+										</header>
+										<ul class="seas-pubs" id="seas-pubs"></ul>
+										<ul class="actions" id="seas-pubs-more"></ul>
+									</article>
 
-    <section class="method section-pad">
-      <div class="method-panel reveal">
-        <div class="method-copy">
-          <p class="section-index light">03 / How we work</p>
-          <h2>Research, tested<br>against reality.</h2>
-          <p>We work at the boundary between academia and industry: defining relevant questions together, investigating them systematically, and returning usable knowledge to engineering teams.</p>
-          <a class="button button-light" href="#contact">Start a conversation <span aria-hidden="true">→</span></a>
-        </div>
-        <ol class="method-steps">
-          <li><span>01</span><div><strong>Frame</strong><small>Start from a consequential engineering problem.</small></div></li>
-          <li><span>02</span><div><strong>Study</strong><small>Apply empirical methods in real development contexts.</small></div></li>
-          <li><span>03</span><div><strong>Build</strong><small>Turn evidence into methods, models, and tools.</small></div></li>
-          <li><span>04</span><div><strong>Transfer</strong><small>Put the result back into engineering practice.</small></div></li>
-        </ol>
-      </div>
-    </section>
+									<article class="box post" id="datasets">
+										<header>
+											<h2>Datasets <strong>&amp; software</strong></h2>
+										</header>
+										<ul class="divided seas-datasets" id="seas-datasets"></ul>
+									</article>
 
-    <section class="publications section-pad" id="publications">
-      <div class="section-heading reveal">
-        <div>
-          <p class="section-index">04 / Selected work</p>
-          <h2>Recent publications</h2>
-        </div>
-        <a class="text-link" href="https://www.gu.se/en/about/find-staff/miroslawstaron" target="_blank" rel="noopener">View the full publication list <span aria-hidden="true">↗</span></a>
-      </div>
+								</div>
 
-      <div class="publication-list reveal">
-        <a class="publication" href="https://research.chalmers.se/en/person/miroslaw" target="_blank" rel="noopener">
-          <span class="pub-year">2026</span>
-          <span class="pub-title">From Large Language Models to Reasoning and Agents</span>
-          <span class="pub-type">IEEE Software</span>
-          <span class="pub-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="publication" href="https://research.chalmers.se/en/person/miroslaw" target="_blank" rel="noopener">
-          <span class="pub-year">2026</span>
-          <span class="pub-title">Toward Design and Architecture-Level Intelligence</span>
-          <span class="pub-type">IEEE Software</span>
-          <span class="pub-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="publication" href="https://www.gu.se/en/about/find-staff/miroslawstaron" target="_blank" rel="noopener">
-          <span class="pub-year">2025</span>
-          <span class="pub-title">Design Pattern Recognition: A Study of Large Language Models</span>
-          <span class="pub-type">Empirical Software Engineering</span>
-          <span class="pub-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="publication" href="https://www.gu.se/en/about/find-staff/miroslawstaron" target="_blank" rel="noopener">
-          <span class="pub-year">2025</span>
-          <span class="pub-title">D-LeDe: A Data Leakage Detection Method for Automotive Perception Systems</span>
-          <span class="pub-type">VEHITS</span>
-          <span class="pub-arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
+							<!-- Sidebar -->
+								<div id="sidebar" class="col-4 col-12-medium">
 
-    <section class="people section-pad" id="people">
-      <div class="people-intro reveal">
-        <p class="section-index">05 / People</p>
-        <h2>Built around<br><span>collaboration.</span></h2>
-        <p>SEAS connects researchers, doctoral students, engineers, and industrial partners around shared problems in software-intensive systems.</p>
-      </div>
-      <article class="lead-card reveal">
-        <div class="portrait" aria-hidden="true">
-          <span>MS</span>
-          <svg viewBox="0 0 420 420"><circle cx="210" cy="210" r="150"/><circle cx="210" cy="210" r="105"/><path d="M35 210h350M210 35v350"/></svg>
-        </div>
-        <div class="lead-info">
-          <p class="mono">Group lead</p>
-          <h3>Miroslaw Staron</h3>
-          <p>Professor of Software Engineering<br>University of Gothenburg &amp; Chalmers</p>
-          <a class="text-link" href="https://www.gu.se/en/about/find-staff/miroslawstaron" target="_blank" rel="noopener">View university profile <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-    </section>
+									<section id="news">
+										<header>
+											<h2 class="seas-side-title">News &amp; events</h2>
+										</header>
+										<ul class="divided" id="seas-news"></ul>
+									</section>
 
-    <section class="contact" id="contact">
-      <div class="contact-grid" aria-hidden="true"></div>
-      <div class="contact-copy reveal">
-        <p class="section-index light">06 / Connect</p>
-        <h2>Have a hard<br>software problem?</h2>
-        <p>We are always interested in research collaborations, industrial case studies, and conversations with future doctoral students.</p>
-        <a class="button button-primary" href="mailto:miroslaw.staron@gu.se">miroslaw.staron@gu.se <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="contact-meta reveal">
-        <div><span>Visit</span><p>Hörselgången 5<br>417 56 Gothenburg, Sweden</p></div>
-        <div><span>Affiliations</span><p>Department of Computer Science and Engineering<br>University of Gothenburg &amp; Chalmers</p></div>
-      </div>
-    </section>
-  </main>
+									<section>
+										<ul class="divided">
+											<li>
+												<article class="box highlight">
+													<header>
+														<h3><a href="https://www.sciencedirect.com/journal/information-and-software-technology">Information and Software Technology</a></h3>
+													</header>
+													<p>Miroslaw Staron is Editor-in-Chief of <em>Information and Software Technology</em> (IST), Elsevier &mdash;
+													a leading journal for empirical software engineering research. Read the editorial
+													<a href="https://doi.org/10.1016/j.infsof.2026.108197">&ldquo;How not to get your paper rejected&rdquo;</a> before submitting.</p>
+													<ul class="actions">
+														<li><a href="https://www.sciencedirect.com/journal/information-and-software-technology" class="button icon solid fa-book-open">Visit IST</a></li>
+													</ul>
+												</article>
+											</li>
+										</ul>
+									</section>
 
-  <footer>
-    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>SEAS</span></a>
-    <p>Software Engineering for<br>Embedded &amp; Automotive Systems</p>
-    <p class="mono">© <span data-year></span> SEAS<br>Gothenburg, Sweden</p>
-    <a href="#top" class="back-top">Back to top ↑</a>
-  </footer>
+								</div>
 
-  <script src="script.js"></script>
-</body>
+						</div>
+					</div>
+				</section>
+
+			<!-- People -->
+				<section id="people" class="seas-people">
+					<div class="container">
+						<header>
+							<h2>Our <strong>people</strong></h2>
+						</header>
+						<div class="row" id="seas-members"></div>
+					</div>
+				</section>
+
+			<!-- Venues -->
+				<section id="venues" class="seas-venues">
+					<div class="container">
+						<header>
+							<h2>Top <strong>software engineering venues</strong></h2>
+							<p>Journals and conferences at JUFO level 3 and/or CORE A*/A that we target.
+							Rankings change &mdash; see the <a href="https://jfp.csc.fi/en/">JUFO portal</a> and the
+							<a href="https://portal.core.edu.au/conf-ranks/">CORE portal</a>.</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<h3>Journals</h3>
+								<table class="seas-table"><thead><tr><th>Venue</th><th>JUFO</th><th>CORE</th></tr></thead>
+								<tbody id="seas-venues-journals"></tbody></table>
+							</div>
+							<div class="col-6 col-12-medium">
+								<h3>Conferences</h3>
+								<table class="seas-table"><thead><tr><th>Venue</th><th>JUFO</th><th>CORE</th></tr></thead>
+								<tbody id="seas-venues-conferences"></tbody></table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2>Interested in working with us? <strong>Get in touch:</strong></h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<p>We collaborate closely with industry on research projects, master's theses and PhD studies.
+									Contact Miroslaw Staron if you would like to work with the SEAS group.</p>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<ul class="icons">
+										<li class="icon solid fa-home">
+											Department of Computer Science and Engineering<br />
+											Hörselgången 5, 412 96 Gothenburg, Sweden
+										</li>
+										<li class="icon solid fa-envelope">
+											<a href="mailto:miroslaw.staron@gu.se">miroslaw.staron@gu.se</a>
+										</li>
+										<li class="icon brands fa-github">
+											<a href="https://github.com/seas-group">github.com/seas-group</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; SEAS group, Chalmers &amp; University of Gothenburg</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Content (edit these files) -->
+			<script src="content/research.js"></script>
+			<script src="content/news.js"></script>
+			<script src="content/members.js"></script>
+			<script src="content/publications.js"></script>
+			<script src="content/venues.js"></script>
+			<script src="assets/js/seas-render.js"></script>
+
+		<!-- Template scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
