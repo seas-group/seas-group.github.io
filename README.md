@@ -35,12 +35,10 @@ Then open <http://localhost:8765>.
 
 ## Deploy
 
+Edit files directly on GitHub, or clone, edit and push:
+
 ```bash
-git init -b main
-git add .
-git commit -m "SEAS website"
-git remote add origin https://github.com/seas-group/seas-group.github.io.git
-git push -u origin main
+git clone https://github.com/seas-group/seas-group.github.io.git
 ```
 
 Every push to `main` is deployed automatically by `.github/workflows/deploy-pages.yml`.
