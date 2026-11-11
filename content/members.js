@@ -37,6 +37,20 @@ var SEAS_MEMBERS = [
     scholar: ""
   },
   {
+    name: "Srijita Basu",
+    role: "Postdoctoral Researcher",
+    photo: "images/people/srijita.jpg",
+    bio: "Srijita Basu is a Postdoctoral Researcher in the Software Engineering Unit at Chalmers University of Technology and the University of Gothenburg, Sweden. " +
+         "Her research interests include Agentic AI, Software Engineering, Cybersecurity, Automotive Software, Cloud Computing and Blockchain. " +
+         "She received her PhD in 2023 from the Indian Institute of Information Technology Kalyani. " +
+         "Her current work investigates the use of large language models for software vulnerability detection and correction. " +
+         "She also studies interactions between AI agents, analyzing multi-agent collaboration patterns and formulating metrics to systematically characterize and evaluate agent interactions and behavior.",
+    gu: "https://www.gu.se/en/about/find-staff/srijitabasu",
+    chalmers: "https://www.chalmers.se/en/persons/srijita/",
+    web: "",
+    scholar: ""
+  },
+  {
     name: "Simin Sun",
     role: "PhD student",
     photo: "images/people/simin.jpg",
