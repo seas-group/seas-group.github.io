@@ -24,6 +24,21 @@ var SEAS_MEMBERS = [
     scholar: "https://scholar.google.com/citations?user=oMZ1ucgAAAAJ"
   },
   {
+    name: "Farnaz Fotrousi",
+    role: "Assistant Professor in Software Engineering",
+    photo: "images/people/farnaz.jpg",
+    bio: "Farnaz Fotrousi is an Assistant Professor in Software Engineering at Chalmers University of Technology and the University of Gothenburg. " +
+         "Her research interests include requirements engineering, user feedback, software ethics and continuous software evolution, with a particular interest in using " +
+         "conversational and agentic AI for requirements elicitation and analysis and to guide evidence-based software changes. " +
+         "Drawing on several years of industry experience, she pursues applied research that addresses practical software engineering challenges. " +
+         "She is an experienced educator and supervisor with a strong record of service to the research community through conference and workshop organisation, " +
+         "programme committee membership and journal reviewing.",
+    gu: "https://www.gu.se/en/about/find-staff/farnazfotrousi",
+    chalmers: "https://www.chalmers.se/en/persons/fotrousi/",
+    web: "https://www.farnazfotrousi.com/",
+    scholar: ""
+  },
+  {
     name: "Wilhelm Meding",
     role: "Researcher",
     photo: "images/people/wilhelm.jpg",
@@ -76,14 +91,27 @@ var SEAS_MEMBERS = [
   },
   {
     name: "Md Abu Ahammed Babu",
-    role: "PhD student",
+    role: "Industrial PhD student",
     photo: "images/people/babu.jpg",
-    // TODO: replace with Babu's own bio (bio_babu.txt was empty; this draft is based on his publications)
-    bio: "Md Abu Ahammed Babu is a PhD student in software engineering at Chalmers and the University of Gothenburg. " +
-         "His research focuses on data quality and reliability in machine-learning systems for automotive perception, " +
-         "in particular detecting and handling train&ndash;test data leakage in automotive image datasets.",
+    bio: "Md Abu Ahammed Babu is an industrial PhD researcher at Volvo Cars and the University of Gothenburg, working at the intersection of " +
+         "Software Engineering, Machine Learning and Computer Vision, with a particular focus on camera-based perception systems for autonomous driving. " +
+         "The research covers how training data influences the development and evaluation of deep neural networks (DNNs) and perception models, " +
+         "considering issues such as data leakage, training data coverage and data diversity across different driving contexts. " +
+         "A current focus is developing methods and practical guidelines for assessing and improving training datasets used in automotive perception systems.",
     gu: "",
     chalmers: "https://www.chalmers.se/en/persons/ahammed/",
+    web: "",
+    scholar: ""
+  },
+  {
+    name: "Bengt Haraldsson",
+    role: "Industrial PhD student",
+    photo: "images/people/bengt.jpg",
+    bio: "Bengt Haraldsson is an industrial PhD student at Chalmers University of Technology and the University of Gothenburg. " +
+         "He is employed by TRATON Group R&amp;D, a development organization within Volkswagen responsible for developing modular solutions for Scania, MAN, International and VW Truck &amp; Bus. " +
+         "His research focuses on complexity, maintainability and flexibility, for both human and LLM-based developers, with the aim of increasing the success rate of large-scale software projects.",
+    gu: "",
+    chalmers: "https://www.chalmers.se/en/persons/bengthar/",
     web: "",
     scholar: ""
   },
