@@ -39,19 +39,6 @@ var SEAS_MEMBERS = [
     scholar: ""
   },
   {
-    name: "Wilhelm Meding",
-    role: "Researcher",
-    photo: "images/people/wilhelm.jpg",
-    bio: "Wilhelm Meding is a seasoned systems manager and researcher with 26 years at Ericsson and deep expertise in software and systems engineering. " +
-         "He has led cross-functional teams, defined requirements for high-performance systems and delivered trustworthy analytics and dashboards. " +
-         "His work applies AI to software engineering: data-quality automation, self-managing measurement systems and AI agents for requirements compliance. " +
-         "He has authored around 70 publications.",
-    gu: "",
-    chalmers: "https://research.chalmers.se/en/person/medingw",
-    web: "",
-    scholar: ""
-  },
-  {
     name: "Srijita Basu",
     role: "Postdoctoral Researcher",
     photo: "images/people/srijita.jpg",
@@ -62,6 +49,19 @@ var SEAS_MEMBERS = [
          "She also studies interactions between AI agents, analyzing multi-agent collaboration patterns and formulating metrics to systematically characterize and evaluate agent interactions and behavior.",
     gu: "https://www.gu.se/en/about/find-staff/srijitabasu",
     chalmers: "https://www.chalmers.se/en/persons/srijita/",
+    web: "",
+    scholar: ""
+  },
+  {
+    name: "Wilhelm Meding",
+    role: "Researcher",
+    photo: "images/people/wilhelm.jpg",
+    bio: "Wilhelm Meding is a seasoned systems manager and researcher with 26 years at Ericsson and deep expertise in software and systems engineering. " +
+         "He has led cross-functional teams, defined requirements for high-performance systems and delivered trustworthy analytics and dashboards. " +
+         "His work applies AI to software engineering: data-quality automation, self-managing measurement systems and AI agents for requirements compliance. " +
+         "He has authored around 70 publications.",
+    gu: "",
+    chalmers: "https://research.chalmers.se/en/person/medingw",
     web: "",
     scholar: ""
   },
