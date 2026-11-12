@@ -1,0 +1,35 @@
+{
+  "_comment": [
+    "Conferences whose upcoming main-track deadlines are shown on the site.",
+    "Data comes from the community-maintained se-deadlines dataset:",
+    "  https://github.com/se-deadlines/se-deadlines.github.io (_data/conferences.yml)",
+    "se_deadlines: the entry name(s) of the main research track in that dataset.",
+    "url: link used when no upcoming deadline is known ('not announced yet').",
+    "manual: deadlines you add by hand (for conferences missing from the dataset).",
+    "        Past dates disappear automatically, so old entries do no harm."
+  ],
+  "conferences": [
+    { "short": "ICSE",    "se_deadlines": ["ICSE"],     "url": "https://conf.researchr.org/series/icse" },
+    { "short": "FSE",     "se_deadlines": ["FSE"],      "url": "https://conf.researchr.org/series/fse" },
+    { "short": "ASE",     "se_deadlines": ["ASE"],      "url": "https://conf.researchr.org/series/ase" },
+    { "short": "ISSTA",   "se_deadlines": ["ISSTA"],    "url": "https://conf.researchr.org/series/issta" },
+    { "short": "ESEM",    "se_deadlines": ["ESEM"],     "url": "https://conf.researchr.org/series/esem" },
+    { "short": "ICSME",   "se_deadlines": ["ICSME"],    "url": "https://conf.researchr.org/series/icsme" },
+    { "short": "MSR",     "se_deadlines": ["MSR"],      "url": "https://conf.researchr.org/series/msr" },
+    { "short": "SANER",   "se_deadlines": ["SANER"],    "url": "https://conf.researchr.org/series/saner" },
+    { "short": "ICSA",    "se_deadlines": ["ICSA"],     "url": "https://conf.researchr.org/series/icsa" },
+    { "short": "ECSA",    "se_deadlines": ["ECSA"],     "url": "https://conf.researchr.org/series/ecsa" },
+    { "short": "SEAA",    "se_deadlines": ["SEAA-RPT", "SEAA"], "url": "https://dsd-seaa.com/" },
+    { "short": "PROFES",  "se_deadlines": ["PROFES"],   "url": "https://conf.researchr.org/series/profes" },
+    { "short": "PROMISE", "se_deadlines": ["PROMISE"],  "url": "https://conf.researchr.org/series/promise" },
+    { "short": "CAIN",    "se_deadlines": ["CAIN"],     "url": "https://conf.researchr.org/series/cain" }
+  ],
+  "manual": [
+    { "conf": "ICSME", "edition": "ICSME 2027", "what": "Research papers: paper submission", "date": "2027-03-05",
+      "url": "https://conf.researchr.org/dates/icsme-2027", "note": "From the ICSME 2027 important-dates page (Nov 2026)." },
+    { "conf": "ECSA", "edition": "ECSA 2027", "what": "Research papers: abstract submission (mandatory)", "date": "2027-03-12",
+      "url": "https://conf.researchr.org/dates/ecsa-2027", "note": "From the ECSA 2027 important-dates page (Nov 2026)." },
+    { "conf": "ECSA", "edition": "ECSA 2027", "what": "Research papers: paper submission", "date": "2027-03-19",
+      "url": "https://conf.researchr.org/dates/ecsa-2027", "note": "From the ECSA 2027 important-dates page (Nov 2026)." }
+  ]
+}

@@ -27,6 +27,15 @@ top of the list, change the text. Keep the quotes and commas.
 Member photos: put a 480×600 JPG in `images/people/` and reference it in `members.js`.
 Original photos and bios are kept in `_source/` (not published).
 
+## Conference deadlines
+
+The "Upcoming deadlines" list (`content/deadlines.js`) is generated automatically on the 1st of
+every month by `.github/workflows/update-deadlines.yml`, using the community-maintained
+[se-deadlines](https://github.com/se-deadlines/se-deadlines.github.io) dataset. Run it any time from
+the repo's Actions tab ("Update conference deadlines" → "Run workflow").
+To change which conferences are listed, or to add a deadline by hand for a conference the dataset
+does not cover, edit `scripts/deadline_sources.json`.
+
 ## Preview locally
 
 ```bash

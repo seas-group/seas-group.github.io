@@ -65,6 +65,14 @@
     .rank.top { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); }
     .venue-note { text-align: center; color: var(--muted); font-size: .88rem; margin-top: 22px; }
     .venue-note a { color: var(--brand-2); }
+    .vt.dl th:nth-child(n+2), .vt.dl td:nth-child(n+2) { text-align: left; width: auto; }
+    .vt.dl th:last-child, .vt.dl td:last-child { text-align: right; white-space: nowrap; }
+    .vt.dl td:first-child { white-space: nowrap; font-weight: 600; }
+    .vt.dl td small { display: block; color: var(--muted); font-size: .8rem; }
+    .vt.dl .soon { color: var(--accent); font-weight: 700; }
+    .dl-pending { color: var(--muted); font-size: .9rem; margin: 18px 0 0; }
+    .dl-pending a { color: var(--brand-2); }
+    @media (max-width: 640px) { .vt.dl th:nth-child(3), .vt.dl td:nth-child(3) { display: none; } }
     @media (max-width: 860px) { .venue-grid { grid-template-columns: 1fr; } }
     /* header-logo-test: taller header for the horizontal logo */
     .nav { height: 88px; }
@@ -85,6 +93,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#venues">Venues</a></li>
+        <li><a href="#deadlines">Deadlines</a></li>
       </ul>
       <div class="nav-cta">
         <a class="btn btn-ghost" href="https://www.sciencedirect.com/journal/information-and-software-technology">IST journal</a>
@@ -212,6 +221,22 @@
           <div class="venue-card reveal"><h3>Conferences</h3><table class="vt"><thead><tr><th>Venue</th><th>JUFO</th><th>CORE</th></tr></thead><tbody id="vc"></tbody></table></div>
         </div>
         <p class="venue-note">Rankings change: check the <a href="https://jfp.csc.fi/en/">JUFO portal</a> and the <a href="https://portal.core.edu.au/conf-ranks/">CORE portal</a>.</p>
+
+        <div id="deadlines" class="deadlines reveal">
+          <div class="section-head" style="margin-top:72px;margin-bottom:28px">
+            <span class="eyebrow">Upcoming deadlines</span>
+            <h2>Conference deadlines</h2>
+            <p>Main research-track deadlines for the conferences above. Updated automatically once a month; always check the conference website.</p>
+          </div>
+          <div class="venue-card">
+            <table class="vt dl">
+              <thead><tr><th>Deadline</th><th>Conference</th><th>Track</th><th>Days left</th></tr></thead>
+              <tbody id="dl-list"></tbody>
+            </table>
+            <p class="dl-pending" id="dl-pending"></p>
+          </div>
+          <p class="venue-note" id="dl-updated"></p>
+        </div>
       </div>
     </section>
 
@@ -254,6 +279,7 @@
   <script src="content/publications.js"></script>
   <script src="content/venues.js"></script>
   <script src="content/stats.js"></script>
+  <script src="content/deadlines.js"></script>
   <script>
   (function () {
     function $(id) { return document.getElementById(id); }
@@ -310,6 +336,24 @@
     function vrow(v) { return '<tr><td><a href="' + esc(v.url) + '">' + esc(v.short) + '</a><small>' + esc(v.name) + '</small></td><td>' + rank(v.jufo, "3") + '</td><td>' + rank(v.core, "A*") + '</td></tr>'; }
     fill("vj", SEAS_VENUES_JOURNALS, vrow);
     fill("vc", SEAS_VENUES_CONFERENCES, vrow);
+
+    if (typeof SEAS_DEADLINES !== "undefined") {
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var fmt = function (iso) { return new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }); };
+      var upcoming = SEAS_DEADLINES.filter(function (d) { return new Date(d.date + "T00:00:00") >= today; });
+      fill("dl-list", upcoming, function (d) {
+        var days = Math.round((new Date(d.date + "T00:00:00") - today) / 86400000);
+        return '<tr><td>' + fmt(d.date) + '</td><td><a href="' + esc(d.url) + '">' + esc(d.edition) + '</a>' + (d.place ? '<small>' + esc(d.place) + '</small>' : '') + '</td>' +
+          '<td>' + esc(d.what) + (d.note ? '<small>' + esc(d.note) + '</small>' : '') + '</td>' +
+          '<td' + (days <= 30 ? ' class="soon"' : '') + '>' + (days === 0 ? 'today' : days + ' days') + '</td></tr>';
+      });
+      if (!upcoming.length) $("dl-list").innerHTML = '<tr><td colspan="4" style="color:var(--muted)">No upcoming deadlines are known right now.</td></tr>';
+      var have = {}; upcoming.forEach(function (d) { have[d.conf] = true; });
+      var pend = SEAS_DEADLINES_PENDING.concat(SEAS_DEADLINES.filter(function (d) { return !have[d.conf]; }).map(function (d) { return { conf: d.conf, url: d.url }; }))
+        .filter(function (p, i, a) { return !have[p.conf] && a.findIndex(function (q) { return q.conf === p.conf; }) === i; });
+      if (pend.length) $("dl-pending").innerHTML = 'Next deadline not announced yet: ' + pend.map(function (p) { return '<a href="' + esc(p.url) + '">' + esc(p.conf) + '</a>'; }).join(", ") + '.';
+      $("dl-updated").innerHTML = 'Last updated ' + fmt(SEAS_DEADLINES_UPDATED) + ' from <a href="https://se-deadlines.github.io/">se-deadlines.github.io</a>.';
+    }
   })();
   </script>
 </body>
