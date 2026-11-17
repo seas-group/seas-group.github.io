@@ -54,7 +54,7 @@ var SEAS_MEMBERS = [
   },
   {
     name: "Wilhelm Meding",
-    role: "Researcher",
+    role: "System Manager, Researcher",
     photo: "images/people/wilhelm.jpg",
     bio: "Wilhelm Meding is a seasoned systems manager and researcher with 26 years at Ericsson and deep expertise in software and systems engineering. " +
          "He has led cross-functional teams, defined requirements for high-performance systems and delivered trustworthy analytics and dashboards. " +
